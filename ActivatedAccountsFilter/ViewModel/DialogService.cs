@@ -6,7 +6,8 @@ namespace ActivatedAccountsFilter.ViewModel
 {
     class DialogService : IDialogService
     {
-        public string FilePath { get; set; }
+        public string FilePathAllAccInfo { get; set; }
+        public string FilePathSecondAccInfo { get; set; }
         public string FileDirectory { get; set; }
 
         public bool OpenFileDialog()
@@ -16,7 +17,8 @@ namespace ActivatedAccountsFilter.ViewModel
             if (FileDir.ShowDialog() == DialogResult.OK)
             {
                 FileDirectory = FileDir.SelectedPath;
-                FilePath = FileDirectory + @"\allaccount.xlsx";
+                FilePathAllAccInfo = FileDirectory + @"\allaccount.xlsx";
+                FilePathSecondAccInfo = FileDirectory + @"\secondAccountInfo.xlsx";
                 return true;
             }
             return false;

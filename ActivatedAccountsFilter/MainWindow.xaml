@@ -17,8 +17,7 @@
             <ListView.View>
                 <GridView>
                     <GridViewColumn DisplayMemberBinding="{Binding login}" Header="Модель" />
-                    <GridViewColumn DisplayMemberBinding="{Binding Company}" Width="100" Header="Компания"/>
-                    <GridViewColumn DisplayMemberBinding="{Binding Price}" Header="Цена"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding header}" Width="100" Header="Компания"/>
                 </GridView>
             </ListView.View>
      

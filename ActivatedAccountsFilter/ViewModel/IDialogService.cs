@@ -3,6 +3,7 @@
     interface IDialogService
     {
         bool OpenFileDialog();
-        string FilePath { get; set; }
+        string FilePathAllAccInfo { get; set; }
+        string FilePathSecondAccInfo { get; set; }
     }
 }
