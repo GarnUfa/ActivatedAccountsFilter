@@ -14,7 +14,7 @@ namespace ActivatedAccountsFilter.ViewModel
         private IDialogService dialogService;
         private DataTable tableData;
         public event PropertyChangedEventHandler PropertyChanged;
-        public ObservableCollection<ActivatedAccountsFilter_VM> huilo { get; set; } = new ObservableCollection<ActivatedAccountsFilter_VM>();
+        public ObservableCollection<ActivatedAccountsFilter_VM> AccountList { get; set; } = new ObservableCollection<ActivatedAccountsFilter_VM>();
         public string login { get; set; }
         public string header { get; set; }
         public ActivatedAccountsFilter_VM(IDialogService dialogService)
@@ -45,7 +45,7 @@ namespace ActivatedAccountsFilter.ViewModel
             {
                 login = account.login;
                 header = account.header;
-                huilo.Add(new ActivatedAccountsFilter_VM(login, header));
+                AccountList.Add(new ActivatedAccountsFilter_VM(login, header));
             }
 
             //vm.login = tableData.ID2; как разберусь - убрать
