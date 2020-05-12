@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 
 namespace ActivatedAccountsFilter.ViewModel
 {
     class Account
     {
+        
         private string _login;
         private string _header;
         public string login {get => _login; set { _login = value; } }
@@ -16,5 +18,6 @@ namespace ActivatedAccountsFilter.ViewModel
             this.login = login;
             this.header = header;
         }
+        public Account() { }
     }
 }

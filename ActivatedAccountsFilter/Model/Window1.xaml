@@ -10,10 +10,10 @@
         <Grid.DataContext>
             <local:ActivatedAccountsFilter_VM/>
         </Grid.DataContext>
-        <DataGrid Height="311" VerticalAlignment="Top" Margin="0,10,0,0" >
+        <DataGrid Height="311" VerticalAlignment="Top" Margin="0,10,0,0" ItemsSource="{Binding AccountList}">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Модель" Binding="{Binding Path=Title}" Width="90" />
-                <DataGridHyperlinkColumn Header="Компания" Binding="{Binding Path=Company}" Width="80" />
+                <DataGridTextColumn Header="Модель" Binding="{Binding login}" Width="90" />
+                <DataGridTextColumn Header="Компания" Binding="{Binding header}" Width="80" />
             </DataGrid.Columns>
 
         </DataGrid>
